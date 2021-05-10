@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <!-- Vue JS and Team JS -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
@@ -55,32 +54,47 @@
                     </div>
                 </div>
             </nav>
+        </header>
 
-            <!-- Beginning of Flexbox (with assistance from Bulma) -->
-            <div class="columns has-background-white">
-                <div class="column">
-                    <section class="hero is-success is-halfheight has-bg-img">
-                        <div class="hero-body">
-                            <div class="container">
-                                <p class="title">Half height hero</p>
-                                <p class="subtitle">Half height subtitle</p>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="columns is-mobile p-6">
-                        <div class="column">
-                            <p class="bd-notification is-info">First nested column</p>
-                        </div>
-                        <div class="column">
-                            <p class="bd-notification is-info">Second nested column</p>
-                        </div>
-                        <div class="column">
-                            <p class="bd-notification is-info">Third nested column</p>
-                        </div>
-                    </div>
+        <!-- Hero Container -->
+        <section class="hero is-success is-halfheight has-bg-img">
+            <div class="hero-body">
+                <div class="container">
+                    <p class="title pb-3">COVID-19 Contact Tracing</p>
+                    <p class="subtitle">By Adam English, James Barber, Kostas Hassouros, and Max Zadarnovskiy.</p>
                 </div>
             </div>
-        </header>
+        </section>
+
+        <!-- CSS Grids -->
+        <div class="wrapper pt-5">
+            <div class="one">
+                <div id="map"></div>
+            </div>            
+            <div class="two">
+                <div id="updates">
+
+                    
+
+
+                    <div class="update">
+                        <h1 class="title is-5">ALERT</h1>
+                        <h1 class="subtitle is-5"><strong>BURNSIDE</strong> is now a hotspot.</h1>
+                    </div>
+                    <div class="update">
+                        <h1 class="title is-5">ALERT</h1>
+                        <h1 class="subtitle is-5"><strong>ROSTREVOR</strong> is now a hotspot.</h1>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoe-eyH1adNSD9M2QeabJtIyp5A7CieSw&callback=initMap&libraries=&v=weekly" async></script>
 </body>
 </html>

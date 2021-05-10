@@ -1,3 +1,4 @@
+// Collapse navbar for mobile
 document.addEventListener('DOMContentLoaded', () => 
 {
     // Get all "navbar-burger" elements
@@ -21,5 +22,18 @@ document.addEventListener('DOMContentLoaded', () =>
             });
         });
     }
-  
 });
+
+// Initialise Google Maps
+let map;
+
+function initMap() 
+{
+    map = new google.maps.Map(document.getElementById("map"), 
+    {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8,
+    });
+}
+
+// Create Alert
