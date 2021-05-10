@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 
 * 
 {
@@ -13,12 +13,19 @@ body, #app
 
 #logo
 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 1.5em;
-    color: hsl(141, 53%, 53%);
+    color: hsl(204, 86%, 53%)
 }
 
 #logo:hover
 {
     background-color: hsl(0, 0%, 96%)
+}
+
+.has-bg-img 
+{ 
+    background: linear-gradient(rgba(0, 0, 0, 0.1), 40%, rgba(0, 0, 0, 1)), url('/images/dashboard-map2.jpg');background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }

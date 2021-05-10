@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Who Has Covid?</title>
+    <title>Who has COVID-19?</title>
 
      <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -22,6 +22,8 @@
             <!-- Navigation Bar -->
             <nav class="navbar is-light" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
+                    <a id="logo" class="navbar-item">wehave</a>
+
                     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -30,7 +32,6 @@
                 </div>
                 <div id="navbarMain" class="navbar-menu">
                     <div class="navbar-start">
-                        <a id="logo" class="navbar-item">wehave</a>
                         <a class="navbar-item is-active">Home</a>
                         <a class="navbar-item">Businesses and Events</a>
                         <div class="navbar-item has-dropdown is-hoverable">
@@ -48,7 +49,7 @@
                         <div class="navbar-item">
                             <div class="buttons">
                                 <a class="button is-light">Log In</a>
-                                <a class="button is-primary">Sign up</a>
+                                <a class="button is-info">Sign up</a>
                             </div>
                         </div>
                     </div>
@@ -58,16 +59,25 @@
             <!-- Beginning of Flexbox (with assistance from Bulma) -->
             <div class="columns has-background-white">
                 <div class="column">
-                    <p class="bd-notification is-primary">
-                        <section class="hero is-success is-halfheight">
-                            <div class="hero-body">
-                                <div class="container">
-                                    <p class="title">Half height hero</p>
-                                    <p class="subtitle">Half height subtitle</p>
-                                </div>
+                    <section class="hero is-success is-halfheight has-bg-img">
+                        <div class="hero-body">
+                            <div class="container">
+                                <p class="title">Half height hero</p>
+                                <p class="subtitle">Half height subtitle</p>
                             </div>
-                        </section>
-                    </p>
+                        </div>
+                    </section>
+                    <div class="columns is-mobile p-6">
+                        <div class="column">
+                            <p class="bd-notification is-info">First nested column</p>
+                        </div>
+                        <div class="column">
+                            <p class="bd-notification is-info">Second nested column</p>
+                        </div>
+                        <div class="column">
+                            <p class="bd-notification is-info">Third nested column</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
