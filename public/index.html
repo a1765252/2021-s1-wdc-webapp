@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Who has COVID-19?</title>
+
+     <!-- Required meta tags -->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!-- Bulma CSS and Team CSS -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css'>
+    <link rel='stylesheet' href='stylesheets/styles.css'>
+
+    <!-- Vue JS and Team JS -->
+    <script src='https://kit.fontawesome.com/695b837a30.js' crossorigin='anonymous'></script>
+    <script src='javascripts/script.js' defer></script>
+</head>
+<body class='has-navbar-fixed-top'>
+    <div id='app'>
+        <header>
+            <!-- Navigation Bar -->
+            <nav class='navbar is-link is-fixed-top' role='navigation' aria-label='main navigation'>
+                <div class='navbar-brand'>
+                    <a href='#welcomeHero' id='logo' class='logo navbar-item'>wehave</a>
+
+                    <a role='button' class='navbar-burger' aria-label='menu' aria-expanded='false' data-target='navbarMain'>
+                        <span aria-hidden='true'></span>
+                        <span aria-hidden='true'></span>
+                        <span aria-hidden='true'></span>
+                    </a>
+                </div>
+                <div id='navbarMain' class='navbar-menu'>
+                    <div class='navbar-start'>
+                        <a href='#welcomeHero' class='navbar-item is-active'>Home</a>
+                        <a href='/business.html'class='navbar-item'>Businesses and Events</a>
+                        <div class='navbar-item has-dropdown is-hoverable'>
+                            <a class='navbar-link'>More</a>
+                            <div class='navbar-dropdown'>
+                                <a class='navbar-item'></a>
+                                <a class='navbar-item'>Contact</a>
+                                <hr class='navbar-divider'>
+                                <a class='navbar-item'>Report an issue</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='navbar-end'>
+                        <div class='navbar-item'>
+                            <div class='buttons'>
+                                <a href='/login.html' class='button is-link'>Log In</a>
+                                <a href='/signup.html' class='button is-light'>Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Home Page Hero -->
+        <section id='welcomeHero' class='hero is-halfheight is-black '>
+            <div class='hero-body has-text-centered'>
+                <div class='container'>
+                    <p class='title logo hover-scale has-text-info is-1'>wehave</p>
+                    <p class='subtitle hover-scale pt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                    <!-- Check-In Input -->
+                    <p class='subtitle has-text-warning is-6' style='margin-top: 10%'>Checking in manually? Enter your Check-In code below <i class='fas fa-long-arrow-alt-down'></i></p>
+                    <div class='field has-addons has-addons-centered'>
+                        <p class='control has-icons-left has-icons-right'>
+                            <input class='input is-medium is-rounded' placeholder='Enter Code'>
+                            <span class='icon is-small is-left'><i class='fas fa-sign-in-alt'></i></span>
+                        </p>
+                        <div class='control'>
+                            <a class='button is-rounded is-medium is-success'>Check-In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrow Down -->
+            <div class='hero-foot has-text-centered'>
+                <p class='title'><a href='#dashboard'><i class='fas fa-chevron-down hover-scale'></i></a></p>
+            </div>
+        </section>
+
+        <!-- Dashboard Hero Title -->
+        <section id='dashboard' class='hero is-small is-dark'>
+            <div class='hero-body has-text-centered'>
+                <p class='subtitle is-5'><i class='fas fa-map-marker-alt pr-2 has-text-danger'></i>Dashboard</p>
+            </div>
+        </section>
+
+        <!-- Brief Information -->
+        <section class='hero is-small is-warning'>
+            <div class='hero-body has-text-centered'>
+                <p class='subtitle is-6'>Checking in manually? Enter your Check-In code below <i class='fas fa-long-arrow-alt-down'></i></p>
+            </div>
+        </section>
+
+        <!-- CSS Grids -->
+        <div class='wrapper'>
+            <!-- Section 1 & 2 -->
+            <div class='check-in'>
+                <div class='field has-addons'>
+                    <p class='control is-expanded has-icons-left has-icons-right'>
+                        <input class='input is-medium is-rounded' placeholder='Enter Code'>
+                        <span class='icon is-small is-left'><i class='fas fa-sign-in-alt'></i></span>
+                    </p>
+                    <div class='control'>
+                        <a class='button is-rounded is-medium is-success'>Check-In</a>
+                    </div>
+                </div>
+            </div>
+            <div class='one has-background-light'>
+                <div id='map'></div>
+            </div>
+            <div class='two has-background-light'>
+                <div id='updates'>
+                    <!-- TEMPORARY FIX FOR UPDATES... -->
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>ROSTREVOR</strong> is now a hotspot.</p>
+                    </div>
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>BURNSIDE</strong> is now a hotspot.</p>
+                    </div>
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>KENSINGTON</strong> is now a hotspot.</p>
+                    </div>
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>GLENUNGA</strong> is now a hotspot.</p>
+                    </div>
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>CROYDON</strong> is now a hotspot.</p>
+                    </div>
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>TORRENSVILLE</strong> is now a hotspot.</p>
+                    </div>
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>MAGIL</strong> is now a hotspot.</p>
+                    </div>
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>NEWTON</strong> is now a hotspot.</p>
+                    </div>
+                    <div class='update has-background-grey-lighter'>
+                        <p><strong class='alert has-text-danger'>ALERT</strong> <i class='fas fa-exclamation-circle has-text-danger'></i> <strong>WOODCROFT</strong> is now a hotspot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Hero Title -->
+        <section class='hero is-small is-dark'>
+            <div class='hero-body has-text-centered'>
+                <p class='subtitle is-5'><i class='fas fa-info-circle pr-2 has-text-info'></i>Australia COVID-19 Statistics</p>
+            </div>
+        </section>
+
+        <!-- Brief Information -->
+        <section class='hero is-small is-warning'>
+            <div class='hero-body has-text-centered'>
+                <p class='subtitle is-6'>COVID-19 statistics provided by <a href='https://covidtracking.com/data/api' class='has-text-link'>The COVID Tracking Project</a> data API.</p>
+            </div>
+        </section>
+
+        <!-- CSS Grids -->
+        <div class='wrapper has-text-centered'>
+            <!-- Section 3 -->
+            <!-- TO BE MODIFIED WITH A REAL-TIME COVID-19 API -->
+            <div class='stats-1 p-6'>
+                <p class='title'><i class='fas fa-user'></i></p>
+                <p class='subtitle is-4 pt-3'>Total Cases</p>
+                <p class='subtitle is-4 has-text-info'>29931</p>
+            </div>
+            <div class='stats-2 p-6'>
+                <p class='title'><i class='fas fa-virus'></i></p>
+                <p class='subtitle is-4 pt-3'>Active Cases</p>
+                <p class='subtitle is-4 has-text-info'>15</p>
+            </div>
+            <div class='stats-3 p-6'>
+                <p class='title'><i class='fas fa-smile'></i></p>
+                <p class='subtitle is-4 pt-3'>Total Recovered</p>
+                <p class='subtitle is-4 has-text-info'>29021</p>
+            </div>
+            <div class='stats-4 p-6'>
+                <p class='title'><i class='fas fa-frown'></i></p>
+                <p class='subtitle is-4 pt-3'>Total Deaths</p>
+                <p class='subtitle is-4 has-text-info'>910</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+            <div class='content has-text-centered'>
+                <p>
+                <strong>COVID-19 Contact Tracing Web Application</strong> created for
+                <a href='https://www.adelaide.edu.au/course-outlines/108960/1/sem-1/'>COMP SCI 2207 Web & Database Computing</a>. The website content is licensed <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- Google Maps API -->
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBoe-eyH1adNSD9M2QeabJtIyp5A7CieSw&callback=initMap&libraries=&v=weekly' async></script>
+</body>
+</html>

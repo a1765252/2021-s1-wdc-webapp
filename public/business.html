@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Who has COVID-19?</title>
+
+     <!-- Required meta tags -->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!-- Bulma CSS and Team CSS -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css'>
+    <link rel='stylesheet' href='stylesheets/styles.css'>
+
+    <!-- Vue JS and Team JS -->
+    <script src='https://kit.fontawesome.com/695b837a30.js' crossorigin='anonymous'></script>
+    <script src='javascripts/script.js' defer></script>
+</head>
+<body class='has-navbar-fixed-top'>
+    <div id='app'>
+        <header>
+            <!-- Navigation Bar -->
+            <nav class='navbar is-link is-fixed-top' role='navigation' aria-label='main navigation'>
+                <div class='navbar-brand'>
+                    <a href='/index.html' id='logo' class='logo navbar-item'>wehave</a>
+
+                    <a role='button' class='navbar-burger' aria-label='menu' aria-expanded='false' data-target='navbarMain'>
+                        <span aria-hidden='true'></span>
+                        <span aria-hidden='true'></span>
+                        <span aria-hidden='true'></span>
+                    </a>
+                </div>
+                <div id='navbarMain' class='navbar-menu'>
+                    <div class='navbar-start'>
+                        <a href='/index.html' class='navbar-item'>Home</a>
+                        <a class='navbar-item is-active'>Businesses and Events</a>
+                        <div class='navbar-item has-dropdown is-hoverable'>
+                            <a class='navbar-link'>More</a>
+                            <div class='navbar-dropdown'>
+                                <a class='navbar-item'></a>
+                                <a class='navbar-item'>Contact</a>
+                                <hr class='navbar-divider'>
+                                <a class='navbar-item'>Report an issue</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='navbar-end'>
+                        <div class='navbar-item'>
+                            <div class='buttons'>
+                                <a href='/login.html' class='button is-link'>Log In</a>
+                                <a href='/signup.html' class='button is-light'>Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Businesses and Events Hero Title -->
+        <section id='dashboard' class='hero is-small is-dark'>
+            <div class='hero-body has-text-centered'>
+                <p class='subtitle is-5'><i class='fas fa-pen-square pr-2 has-text-info'></i>Businesses and Events</p>
+            </div>
+        </section>
+
+        <!-- Register Form Hero -->
+        <section class='hero is-small is-warning'>
+            <div class='hero-body has-text-centered'>
+                <p class='subtitle is-6'>Do you need a QR Code Check-In for your Business or Event? Fill out the form below <i class='fas fa-long-arrow-alt-down'></i></p>
+            </div>
+        </section>
+
+        <!-- CSS Grids -->
+        <div class='wrapper'>
+            <div class='form mx-3'>
+                <p class='subtitle has-text-centered is-5'></i>Venue Information Form</p>
+                <div class='field px-2'>
+                    <div class='control'>
+                        <input class='input is-rounded' type='text' placeholder='Venue Name'>
+                    </div>
+                </div>
+                <div class='field is-grouped p-2'>
+                    <div class='control is-expanded'>
+                        <input class='input is-rounded' type='text' placeholder='Street Number'>
+                    </div>
+                    <div class='control is-expanded'>
+                        <input class='input is-rounded' type='text' placeholder='Street Name'>
+                    </div>
+                    <div class='control is-expanded'>
+                        <input class='input is-rounded' type='text' placeholder='Suburb'>
+                    </div>
+                </div>
+                <div class='field is-grouped p-2'>
+                    <div class='control is-expanded'>
+                        <input class='input is-rounded' type='text' placeholder='City / District'>
+                    </div>
+                    <div class='control'>
+                        <span class='select is-rounded'>
+                            <select>
+                                <option>New South Wales</option>
+                                <option>Victoria</option>
+                                <option>Queensland</option>
+                                <option selected>South Australia</option>
+                                <option>Western Australia</option>
+                                <option>Tasmania</option>
+                                <option>Northern Territory</option>
+                                <option>Australian Capital Territory</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div class='field is-grouped p-2'>
+                    <div class='control is-expanded'>
+                        <input class='input is-rounded' type='text' placeholder='Australia' disabled>
+                    </div>
+                    <div class='control is-expanded'>
+                        <input class='input is-rounded' type='text' placeholder='Zip/Postal Code'>
+                    </div>
+                </div>
+                <div class='field has-text-centered'>
+                    <div class='control'>
+                        <button class='button is-rounded is-link'>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Hero Title -->
+        <section id='dashboard' class='hero is-small is-dark'>
+            <div class='hero-body has-text-centered'>
+                <p class='subtitle is-5'><i class='fas fa-question-circle pr-2 has-text-info'></i>FAQ</p>
+            </div>
+        </section>
+
+        <!-- Brief Information -->
+        <section class='hero is-small is-warning'>
+            <div class='hero-body has-text-centered'>
+                <p class='subtitle is-6'>Please visit the dedicated <a href='/contact.html' class='has-text-link'>contact page</a> for further questions.</p>
+            </div>
+        </section>
+
+        <!-- CSS Grids -->
+        <div class='wrapper'>
+            <div class='content mx-5'>
+                <!-- Question 1 -->
+                <hr>
+                <p class='subtitle is-5 has-text-info has-text-centered'>Who needs a QR Code Check-In?</p>
+                <p>The <a hred='https://www.covid-19.sa.gov.au/emergency-declarations/public-activities'>Public Activities COVID-19 Direction</a> places conditions on businesses that conduct a number of defined public activities.
+                <br><br>Businesses involved in a Defined public activity must have a COVID-Safe Plan in place in order to trade.
+                <br><br>See <a href='https://www.covid-19.sa.gov.au/restrictions-and-responsibilities/activities-and-gatherings'>Activities and Gatherings</a> for:</p>
+                <ul>
+                    <li>definitions of Defined public activities</li>
+                    <li>businesses and activities that are still restricted</li>
+                    <li>businesses and activities that are excluded from the Direction.</li>
+                </ul>
+                <p>If you have not completed the QR Code Check-In registration form, do not have this available at your premises, or do not comply with current Directions, you can be fined up to <span class='has-text-danger'>$5,000</span>.</p>
+
+                <!-- Question 2 -->
+                <hr>
+                <p class='subtitle is-5 has-text-info has-text-centered'>Does my private event require a QR Code Check-In?</p>
+                <p>Gatherings of between 51 and 200 people at a residential premises require a QR Code Check-In, a COVID Marshal, and guests must check-in via the QR Code Check-In. (There are no requirements if you have up to 50 people at a residential premises).
+                <br><br>A private gathering is an invitation-only event or function:</p>
+                <ul>
+                    <li>held at a place (whether indoor or outdoor) that is not residential premises</li>
+                    <li>where persons not invited to the event or function are not permitted to attend.</li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class='footer'>
+            <div class='content has-text-centered'>
+                <p>
+                <strong>COVID-19 Contact Tracing Web Application</strong> created for
+                <a href='https://www.adelaide.edu.au/course-outlines/108960/1/sem-1/'>COMP SCI 2207 Web & Database Computing</a>. The website content is licensed <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- Google Maps API -->
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBoe-eyH1adNSD9M2QeabJtIyp5A7CieSw&callback=initMap&libraries=&v=weekly' async></script>
+</body>
+</html>

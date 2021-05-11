@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Who has COVID-19?</title>
+
+     <!-- Required meta tags -->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!-- Bulma CSS and Team CSS -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css'>
+    <link rel='stylesheet' href='stylesheets/styles.css'>
+
+    <!-- Vue JS and Team JS -->
+    <script src='https://kit.fontawesome.com/695b837a30.js' crossorigin='anonymous'></script>
+    <script src='javascripts/script.js' defer></script>
+</head>
+<body class='has-navbar-fixed-top  has-background-link'>
+    <div id='app'>
+        <header>
+            <!-- Navigation Bar -->
+            <nav class='navbar is-link is-fixed-top' role='navigation' aria-label='main navigation'>
+                <div class='navbar-brand'>
+                    <a href='/index.html' id='logo' class='logo navbar-item'>wehave</a>
+
+                    <a role='button' class='navbar-burger' aria-label='menu' aria-expanded='false' data-target='navbarMain'>
+                        <span aria-hidden='true'></span>
+                        <span aria-hidden='true'></span>
+                        <span aria-hidden='true'></span>
+                    </a>
+                </div>
+                <div id='navbarMain' class='navbar-menu'>
+                    <div class='navbar-start'>
+                        <a href='/index.html' class='navbar-item'>Home</a>
+                        <a class='navbar-item'>Businesses and Events</a>
+                        <div class='navbar-item has-dropdown is-hoverable'>
+                            <a class='navbar-link'>More</a>
+                            <div class='navbar-dropdown'>
+                                <a class='navbar-item'></a>
+                                <a class='navbar-item'>Contact</a>
+                                <hr class='navbar-divider'>
+                                <a class='navbar-item'>Report an issue</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='navbar-end'>
+                        <div class='navbar-item'>
+                            <div class='buttons'>
+                                <a href='/login.html' class='button is-link is-active'>Log In</a>
+                                <a href='/signup.html' class='button is-light'>Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- CSS Grids -->
+        <div class='wrapper'>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class='footer'>
+            <div class='content has-text-centered'>
+                <p>
+                <strong>COVID-19 Contact Tracing Web Application</strong> created for
+                <a href='https://www.adelaide.edu.au/course-outlines/108960/1/sem-1/'>COMP SCI 2207 Web & Database Computing</a>. The website content is licensed <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- Google Maps API -->
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBoe-eyH1adNSD9M2QeabJtIyp5A7CieSw&callback=initMap&libraries=&v=weekly' async></script>
+</body>
+</html>
